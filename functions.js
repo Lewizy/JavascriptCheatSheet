@@ -115,3 +115,23 @@ var msg1 = function (messages1) {
   console.log(messages1);
 };
 console.log(msg1);
+
+//
+
+//
+  function thisFunction(message){
+    console.log(message + this);
+  };
+  var thisObject = {
+    valueFn:thisFunction,
+  };
+  var thisPerson = {
+    name:"Polly Esther",
+    city:"SweaterVille",
+    job:"knitting",
+  };
+  thisObject.valueFn();
+  thisObject.valueFn.bind(thisPerson, ' Hello Polly Esther ')();//bind uses parentheses at end
+  thisObject.valueFn.call(thisPerson.city, 'My city is ');//call does not use parentheses
+thisObject.valueFn.apply(thisPerson.job, ['My job is ']);//call does not use parentheses
+
