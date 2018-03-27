@@ -24,3 +24,4 @@ var lastLetterOfFirstNamE = firstNamE[firstNamE.length - 1];// a
 hoisting = 255;
   var hoisting;
 console.log(hoisting);
+
