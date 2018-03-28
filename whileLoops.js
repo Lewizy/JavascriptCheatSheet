@@ -20,5 +20,6 @@
 
   var whileInitialCondition = false;
   do {
-    console.log("Execute once with 'do' key");
-} while (whileInitialCondition);
+      console.log("Execute once with 'do' key");
+    } 
+while (whileInitialCondition);
